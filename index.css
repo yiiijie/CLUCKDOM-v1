@@ -96,7 +96,11 @@ body{
     margin: 0 33px 10px;
 }
 .nav_link a{
-    text-decoration: none;      
+    text-decoration: none; 
+    transition: .3s;     
+}
+.nav_link a:hover{
+    color: #D9042B;
 }
 .nav_items_en a{
     color: #C2A16C;
@@ -364,8 +368,36 @@ body{
 .pic_carousel{
     display: flex;
     overflow: hidden;
-    justify-content: center;
+    /* justify-content: center; */
+    animation: slideshow 15s infinite;
 }
+
+@keyframes slideshow {
+    0% {
+        margin-left: 0;
+      }
+      
+      20% {
+        margin-left: -100%;
+      }
+      
+      40% {
+        margin-left: -200%;
+      }
+      
+      60% {
+        margin-left: -300%;
+      }
+      
+      80% {
+        margin-left: -400%;
+      }
+      
+      100% {
+        margin-left: -400%;
+      }
+
+  }
 .pic_carousel .pic img{
     margin: 0 10px;
     width: 500px;

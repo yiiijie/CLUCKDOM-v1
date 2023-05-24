@@ -81,7 +81,11 @@ body{
 }
 .nav_link{    
     letter-spacing: 1px;
-    font-family: "Zen Maru Gothic","Noto Sans Japanese",sans-serif;        
+    font-family: "Zen Maru Gothic","Noto Sans Japanese",sans-serif;
+    transition: .3s;      
+}
+.nav_link a:hover{
+    color: #D9042B;
 }
 .nav_items_en{
     font-size: 14px;
