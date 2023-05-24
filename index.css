@@ -369,7 +369,7 @@ body{
     display: flex;
     overflow: hidden;
     /* justify-content: center; */
-    animation: slideshow 15s infinite;
+    animation: slideshow 25s infinite;
 }
 
 @keyframes slideshow {

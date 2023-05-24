@@ -258,7 +258,7 @@ body{
     width: 240px;
     height: 240px;
     z-index: 5;
-    bottom: 80px;
+    bottom: 75px;
 }
 .green_wave{
     position: relative;
@@ -388,7 +388,22 @@ body{
     height: 22px;
     right: -80px;
     top: 140px;
+    animation: arrowMovement 1.8s infinite;
 }
+@keyframes arrowMovement {
+    0% {
+      right:  -40px;
+    }
+    
+    50% {
+      right: -48px;
+    }
+    
+    100% {
+      right:  -40px;
+    }
+  }
+
 .flowchart .no_comb::before{
     display: none;
 }
@@ -423,11 +438,19 @@ body{
     font-weight: 500;
     letter-spacing: 2px;
     font-family: "Zen Maru Gothic","Noto Sans Japanese",sans-serif;
+    transition: .3s;
+}
+.store_button span:hover{
+    background-color:#D74C38;
+    color: #fff;
 }
 .store_button i{
     font-size: 24px;
     line-height: 24px;
     margin-left: 8px;
+}
+.store_button i:hover{
+    color: #fff;
 }
 .flowchart_wrap .dialog{
     position: absolute;
