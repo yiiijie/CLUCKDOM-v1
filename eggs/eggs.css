@@ -405,7 +405,7 @@ body{
     font-family: "Noto Sans Japanese",sans-serif;
   }
 .prd_description .price_wrap
-    .add_cart .button{
+.add_cart .button{
     border-radius: 50px;
     color: #fff;
     letter-spacing: 2px;
@@ -413,7 +413,12 @@ body{
     background-color:#D74C38;
     border: 0px solid #fff;
     margin: 6px 0;
+    transition: .3s;
   }
+.prd_description .price_wrap
+.add_cart .button:hover{
+    background-color:#FFC93D;
+}
 .prd_description .price_wrap .add_cart i{
     color: #fff;
     margin: 0 5px;
