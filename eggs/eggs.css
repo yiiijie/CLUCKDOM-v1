@@ -122,6 +122,19 @@ body{
     border-radius: 50%;
     color: #C2A16C ;
 }
+.email i:hover{
+    animation:rotate .5s cubic-bezier(0.2, 0.9, 0.3, 1.0);
+    /*縮寫：動畫名稱 動畫秒數 移動速率分布(貝茲) 播放狀態*/
+  }
+  @keyframes rotate{
+    0%{
+      transform:rotate(0deg);
+      }
+    100%{
+      transform: rotate(360deg);
+      }
+    }
+  
 .fbig{
     margin-top: 8px;
 }
@@ -137,6 +150,19 @@ body{
     border-radius: 50%;
     color: #ffffff ;
 }
+.fb i:hover{
+    animation:rotate .5s cubic-bezier(0.2, 0.9, 0.3, 1.0);
+    /*縮寫：動畫名稱 動畫秒數 移動速率分布(貝茲) 播放狀態*/
+  }
+  @keyframes rotate{
+    0%{
+      transform:rotate(0deg);
+      }
+    100%{
+      transform: rotate(360deg);
+      }
+    }
+  
 .ig i{
     width: 20px;
     height: 20px;
@@ -149,6 +175,18 @@ body{
     border-radius: 50%;
     color: #ffffff ;
 }
+.ig i:hover{
+    animation:rotate .5s cubic-bezier(0.2, 0.9, 0.3, 1.0);
+    /*縮寫：動畫名稱 動畫秒數 移動速率分布(貝茲) 播放狀態*/
+  }
+  @keyframes rotate{
+    0%{
+      transform:rotate(0deg);
+      }
+    100%{
+      transform: rotate(360deg);
+      }
+    }
 .gotop_btn img{
     width: 90px;
     position: fixed;
@@ -582,20 +620,18 @@ body{
     background-size: cover;
     width: 100%;
     height: 500px;
-    bottom: -260px;
+    bottom: -280px;
 }
-.footer_wrap::before{
+.footer::before{
     content: '';
     background-image: url(pic/footer_hen.svg);
     position: absolute;
-    width: 40%;
-    height: 40%;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    z-index: 3;
+    width: 570px;
+    height: 570px;
+    background-size: cover;
+    z-index: 2;
     bottom: 0px;
     right: 0px;
-    background-position: 0 2600px;
 }
 .footer_inner{
     position: relative;

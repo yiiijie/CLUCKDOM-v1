@@ -120,6 +120,19 @@ body{
     border-radius: 50%;
     color: #C2A16C ;
 }
+.email i:hover{
+    animation:rotate .5s cubic-bezier(0.2, 0.9, 0.3, 1.0);
+    /*縮寫：動畫名稱 動畫秒數 移動速率分布(貝茲) 播放狀態*/
+  }
+  @keyframes rotate{
+    0%{
+      transform:rotate(0deg);
+      }
+    100%{
+      transform: rotate(360deg);
+      }
+    }
+  
 .fbig{
     margin-top: 8px;
 }
@@ -135,6 +148,19 @@ body{
     border-radius: 50%;
     color: #ffffff ;
 }
+.fb i:hover{
+    animation:rotate .5s cubic-bezier(0.2, 0.9, 0.3, 1.0);
+    /*縮寫：動畫名稱 動畫秒數 移動速率分布(貝茲) 播放狀態*/
+  }
+  @keyframes rotate{
+    0%{
+      transform:rotate(0deg);
+      }
+    100%{
+      transform: rotate(360deg);
+      }
+    }
+  
 .ig i{
     width: 20px;
     height: 20px;
@@ -147,6 +173,18 @@ body{
     border-radius: 50%;
     color: #ffffff ;
 }
+.ig i:hover{
+    animation:rotate .5s cubic-bezier(0.2, 0.9, 0.3, 1.0);
+    /*縮寫：動畫名稱 動畫秒數 移動速率分布(貝茲) 播放狀態*/
+  }
+  @keyframes rotate{
+    0%{
+      transform:rotate(0deg);
+      }
+    100%{
+      transform: rotate(360deg);
+      }
+    }
 .wave img{
     width: 100%;
     position: absolute;
