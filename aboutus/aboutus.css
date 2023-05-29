@@ -2,7 +2,6 @@
 *{
     margin: 0;
     padding: 0;
-
     /* outline: 1px solid red; */
 }
 h1{
@@ -12,7 +11,6 @@ h1{
 }
 body{
     position: relative;
-    color: #3d3d3d;
 }
 ::selection{
     color:#3d3d3d;
@@ -49,7 +47,8 @@ body{
     font-size: 14px;
     line-height: 25px;
 }
-.shopping_cart{
+.shopping_cart i{
+    color: #3d3d3d;
     font-size: 25px;
 }
 .header_inner{
@@ -83,7 +82,10 @@ body{
 .nav_link{    
     letter-spacing: 1px;
     font-family: "Zen Maru Gothic","Noto Sans Japanese",sans-serif;
-    transition: .3s;      
+    transition: .3s;
+}
+.nav_link a{
+    color: #3d3d3d;
 }
 .nav_link a:hover{
     color: #D9042B;
@@ -440,6 +442,7 @@ body{
     letter-spacing: 2px;
     font-family: "Zen Maru Gothic","Noto Sans Japanese",sans-serif;
     transition: .3s;
+    color: #3d3d3d;
 }
 .store_button i{
     font-size: 24px;
@@ -450,9 +453,6 @@ body{
     background-color:#D9042B;
     color: #fff;
 }
-/* .store_button:hover i{
-    color: #fff;
-} */
 .flowchart_wrap .dialog{
     position: absolute;
     bottom: 50px;
