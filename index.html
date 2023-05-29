@@ -285,56 +285,35 @@
             </div>
         </div>
     </div>
-    <div class="pic_carousel">
-        <div class="pic">
-            <img src="pic/pic_carousel_1.jpg" alt="輪播照片">
-        </div>
-        <div class="pic">
-            <img src="pic/pic_carousel_2.jpg" alt="輪播照片">
-        </div>
-        <div class="pic">
-            <img src="pic/pic_carousel_3.jpg" alt="輪播照片">
-        </div>
-        <div class="pic">
-            <img src="pic/pic_carousel_4.jpg" alt="輪播照片">
-        </div>
-        <div class="pic">
-            <img src="pic/pic_carousel_1.jpg" alt="輪播照片">
-        </div>
-        <div class="pic">
-            <img src="pic/pic_carousel_2.jpg" alt="輪播照片">
-        </div>
-        <div class="pic">
-            <img src="pic/pic_carousel_3.jpg" alt="輪播照片">
-        </div>
-        <div class="pic">
-            <img src="pic/pic_carousel_4.jpg" alt="輪播照片">
-        </div>
-        <div class="pic">
-            <img src="pic/pic_carousel_1.jpg" alt="輪播照片">
-        </div>
-        <div class="pic">
-            <img src="pic/pic_carousel_2.jpg" alt="輪播照片">
-        </div>
-        <div class="pic">
-            <img src="pic/pic_carousel_3.jpg" alt="輪播照片">
-        </div>
-        <div class="pic">
-            <img src="pic/pic_carousel_4.jpg" alt="輪播照片">
-        </div>
-        <div class="pic">
-            <img src="pic/pic_carousel_1.jpg" alt="輪播照片">
-        </div>
-        <div class="pic">
-            <img src="pic/pic_carousel_2.jpg" alt="輪播照片">
-        </div>
-        <div class="pic">
-            <img src="pic/pic_carousel_3.jpg" alt="輪播照片">
-        </div>
-        <div class="pic">
-            <img src="pic/pic_carousel_4.jpg" alt="輪播照片">
-        </div>
+    <div class="carousel_wrap">
+        <ul class="pic_carousel">
+            <li class="pic">
+                <img src="pic/pic_carousel_1.jpg" alt="輪播照片">
+            </li>
+            <li class="pic">
+                <img src="pic/pic_carousel_2.jpg" alt="輪播照片">
+            </li>
+            <li class="pic">
+                <img src="pic/pic_carousel_3.jpg" alt="輪播照片">
+            </li>
+            <li class="pic">
+                <img src="pic/pic_carousel_4.jpg" alt="輪播照片">
+            </li>
+            <li class="pic">
+                <img src="pic/pic_carousel_1.jpg" alt="輪播照片">
+            </li>
+            <li class="pic">
+                <img src="pic/pic_carousel_2.jpg" alt="輪播照片">
+            </li>
+            <li class="pic">
+                <img src="pic/pic_carousel_3.jpg" alt="輪播照片">
+            </li>
+            <li class="pic">
+                <img src="pic/pic_carousel_4.jpg" alt="輪播照片">
+            </li>
+        </ul>
     </div>
+    
 
     <div class="footer">
         <div class="footer_inner">
@@ -410,7 +389,38 @@
     </script>
     <!-- javascript -->
 
-
+    <!-- <script>
+        function load() {
+            var pic_carousel = document.querySelector('.pic_carousel');
+            var carousel_wrap = document.querySelector('.carousel_wrap');
+            let left = parseInt(pic_carousel.style.left);
+            let timer;
     
+            function move() {
+                clearInterval(timer);
+                timer = setInterval(() => {
+                    left = left - 2;
+                    console.log(pic_carousel.clientLeft);
+                    if (left === -(8 * 500 + 2 * 24)) {
+                        left = 0;
+                    }
+                    pic_carousel.style.left = left + 'px';
+                }, 20);
+            }
+    
+            move();
+    
+            carousel_wrap.onmouseover = function () {
+                clearInterval(timer);
+            };
+    
+            carousel_wrap.onmouseleave = function () {
+                move();
+            };
+        }
+    
+        document.addEventListener('DOMContentLoaded', load);
+    </script>
+     -->
 </body>
 </html>
