@@ -82,13 +82,6 @@ body{
 .nav_link{    
     letter-spacing: 1px;
     font-family: "Zen Maru Gothic","Noto Sans Japanese",sans-serif;
-    transition: .3s;
-}
-.nav_link a{
-    color: #3d3d3d;
-}
-.nav_link a:hover{
-    color: #D9042B;
 }
 .nav_items_en{
     font-size: 14px;
@@ -96,18 +89,23 @@ body{
     text-align: center;
     font-family: "Hammersmith One","Noto Sans Japanese",sans-serif;
     font-weight: normal;
+    color: #C2A16C;
 }
 .nav_items{
     font-size: 18px;
     font-weight: 500;
     text-align: center;
     margin: 0 33px 10px;
+    color: #3d3d3d;
+}
+.nav_link li{
+    transition: .2s;
+}
+.nav_link:hover li{
+    color: #D9042B;
 }
 .nav_link a{
     text-decoration: none;      
-}
-.nav_items_en a{
-    color: #C2A16C;
 }
 .contact_icon{
     display: flex;
@@ -124,6 +122,19 @@ body{
     border-radius: 50%;
     color: #C2A16C ;
 }
+.email i:hover{
+    animation:rotate .5s cubic-bezier(0.2, 0.9, 0.3, 1.0);
+    /*縮寫：動畫名稱 動畫秒數 移動速率分布(貝茲) 播放狀態*/
+  }
+  @keyframes rotate{
+    0%{
+      transform:rotate(0deg);
+      }
+    100%{
+      transform: rotate(360deg);
+      }
+    }
+  
 .fbig{
     margin-top: 8px;
 }
@@ -139,6 +150,19 @@ body{
     border-radius: 50%;
     color: #ffffff ;
 }
+.fb i:hover{
+    animation:rotate .5s cubic-bezier(0.2, 0.9, 0.3, 1.0);
+    /*縮寫：動畫名稱 動畫秒數 移動速率分布(貝茲) 播放狀態*/
+  }
+  @keyframes rotate{
+    0%{
+      transform:rotate(0deg);
+      }
+    100%{
+      transform: rotate(360deg);
+      }
+    }
+  
 .ig i{
     width: 20px;
     height: 20px;
@@ -151,6 +175,18 @@ body{
     border-radius: 50%;
     color: #ffffff ;
 }
+.ig i:hover{
+    animation:rotate .5s cubic-bezier(0.2, 0.9, 0.3, 1.0);
+    /*縮寫：動畫名稱 動畫秒數 移動速率分布(貝茲) 播放狀態*/
+  }
+  @keyframes rotate{
+    0%{
+      transform:rotate(0deg);
+      }
+    100%{
+      transform: rotate(360deg);
+      }
+    }
 .wave img{
     width: 100%;
     position: absolute;
