@@ -200,16 +200,17 @@ body{
     box-sizing: border-box;
 }
 .button span{
-    font-family:"Noto Sans Japanese",sans-serif;  
-    font-size: 16px;
+    font-family: "Hammersmith One","Noto Sans Japanese",sans-serif; 
+    font-size: 20px;
     margin: 0 15px;
-    line-height: 30px;
+    line-height: 35px;
     color: #865A32;
 }
 .button i{
     color: #C2A16C;
     font-size: 30px;
     transition: .1s;
+    cursor: pointer;
 }
 .button #moveright:active{
     transform: translateX(-3px);
@@ -217,32 +218,47 @@ body{
 .button #moveleft:active{
     transform: translateX(3px);
 }
-.media_news{
+.media_news::before{
+    content: '';
+    position: absolute;
+    background-image: url(pic/hen.svg);
+    width: 570px;
+    height: 570px;
+    background-size: cover;
+    top: 160px;
+    left: 30px;
+}
+.media_news, .cluckdom_news {
     display: flex;
     position: relative;
 }
-.media_news .title{
+.media_news .title {
+    color:#3d3d3d;
     width: 1200px;
     display: flex;
     position: absolute;
-    left: 0;
+    left: 150px;
     right: 0;
     margin-left: auto;
     margin-right: auto;
 }
-.media_news .title p{
+.media_news .title p,
+.cluckdom_news .title p {
+    color:#3d3d3d;
     writing-mode: vertical-lr;
     font-size: 16px;
     letter-spacing: 6px;
     font-family: "Noto Sans Japanese",sans-serif;
     line-height: 28px;
 }
-.media_news .title h1{
+.media_news .title h1,
+.cluckdom_news .title h1 {
+    color:#3d3d3d;
     writing-mode: vertical-lr;
     letter-spacing: 10px;
     margin-left: 35px;
 }
-.media_news .title .en{
+.media_news .title .en {
     writing-mode: vertical-lr;
     color: #C2A16C;
     font-size: 18px;
@@ -254,41 +270,227 @@ body{
     overflow: hidden;
 }
 .carousel_cards{
-    width:1560px;
+    width:1800px;
     display: flex;
-    /* justify-content: center; */
     margin-top: 40px;
-    margin-left: 500px;
+    margin-left: 650px;
 }
-.carousel_cards .card{
-    width: 350px;
-    margin: 0 20px;
+.carousel_cards .card,
+.cluckdom_carousel_cards .card{
+    margin: 0 25px;
 }
-.carousel_cards .pic img{
-    width: 350px;
+.carousel_cards .pic img,
+.cluckdom_carousel_cards img {
+    width: 400px;
 }
-.carousel_cards .article{
+.carousel_cards .article,
+.cluckdom_carousel_cards .article{
     margin: 20px 0;
 }
-.carousel_cards .article .date{
+.carousel_cards .article .date {
     color: #C2A16C;
     font-size: 14px;
     font-family: "Noto Sans Japanese",sans-serif;
     letter-spacing: 2px;
 }
-.carousel_cards .card h2{
+.carousel_cards .card h2 {
     font-family: "Zen Maru Gothic","Noto Sans Japanese",sans-serif;
+    color:#3d3d3d;
     margin: 15px 0 25px 0;
     font-weight: 500;
     letter-spacing: 2px;
     line-height: 24px;
     text-align: justify;
 }
-.carousel_cards .card .txt{
+.carousel_cards .card .txt {
+    color:#3d3d3d;
     font-weight: 300;
     font-size: 14px;
     letter-spacing: 2px;
     line-height: 20px;
     text-align: justify;
     font-family: "Noto Sans Japanese",sans-serif;
+}
+.wave_yellow{
+    position: relative;
+    background-image: url('pic/wave_yellow1.png');
+    background-size: cover;
+    height: 1270px;
+    margin-top: 80px;       
+}
+.cluckdom_news{
+    overflow: hidden;
+}
+.cluckdom_news_button{
+    position: absolute;
+    /* width: 1200px; */
+    display: flex;
+    justify-content: flex-end;
+    right: 690px;
+    top: 120px;
+}
+.cluckdom_news_button span{
+    font-family: "Hammersmith One","Noto Sans Japanese",sans-serif; 
+    font-size: 20px;
+    margin: 0 15px;
+    line-height: 35px;
+    color: #865A32;
+}
+.cluckdom_news_button i{
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    transition: .1s;
+}
+.cluckdom_news_button #moveright:active{
+    transform: translateX(-3px);
+}
+.cluckdom_news_button #moveleft:active{
+    transform: translateX(3px);
+}
+.cluckdom_news::before{
+    content: '';
+    position: absolute;
+    background-image: url(pic/egg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 600px;
+    height: 600px;
+    bottom: -50px;
+    right: -280px;
+}
+.cluckdom_news .title {
+    color:#3d3d3d;
+    width: 1200px;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 150px;
+    right: 150px;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cluckdom_carousel_cards {
+    width:1800px;
+    display: flex;
+    margin-top: 190px;
+    margin-left: -560px;
+}
+.cluckdom_news .title .en {
+    writing-mode: vertical-lr;
+    color:#fff;
+    font-size: 18px;
+    letter-spacing: 3px;
+    font-family: "Hammersmith One","Noto Sans Japanese",sans-serif;
+    margin-left: 15px;
+}
+.cluckdom_carousel_cards .article .date {
+    color: #fff;
+    font-size: 14px;
+    font-family: "Noto Sans Japanese",sans-serif;
+    letter-spacing: 2px;
+}
+.cluckdom_carousel_cards .card h2 {
+    font-family: "Zen Maru Gothic","Noto Sans Japanese",sans-serif;
+    color:#3d3d3d;
+    margin: 15px 0 0px 0;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 24px;
+    text-align: justify;
+}
+.cluckdom_carousel_cards .card p + h2{
+    font-weight: 600;
+}
+.footer{
+    position: absolute;
+    background-image: url('pic/footer_bg.png');
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    bottom: 0px;
+}
+.footer::before{
+    content: '';
+    background-image: url(pic/footer_hen.svg);
+    position: absolute;
+    width: 570px;
+    height: 570px;
+    background-size: cover;
+    z-index: 2;
+    bottom: 0px;
+    right: 0px;
+}
+.footer_inner{
+    position: relative;
+    width: 1200px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    margin-top: 120px;
+}
+.footer_logo{
+    margin-right: 60px;
+    width: 155px;
+}
+.footer_info .footer_nav{
+    display: flex;
+    margin: 35px 35px 0 0;
+}
+.footer_info .footer_nav .nav_link .nav_items a{
+    color: #865A32;
+}
+.footer_info .link_btn{
+    display: flex;
+}
+.footer_info .link_btn a{
+    font-size: 18px;
+    color: #D9042B;
+    font-family: "Zen Maru Gothic","Noto Sans Japanese",sans-serif;
+    font-weight: 500; 
+    letter-spacing: 2px;
+}
+.footer_info .link_btn i{
+    font-size: 18px;
+    color:#D9042B;
+    margin-right: 5px;
+}
+.map_link{
+    margin: 0 25px;
+}
+.footer_nav .nav_link:hover li{
+    color: #D9042B;
+}
+.footer_nav .nav_link .nav_items{
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    margin: 10px 30px;
+    color: #865A32;
+}
+.footer_inner .fbig{
+    display: flex;
+    position: absolute;
+    display: flex;
+    right: 330px;
+    top: 30px;
+}
+.footer_inner .fb i{
+    margin: 6px;
+}
+.footer_inner .ig i{
+    margin: 6px;
+}
+.copyright{
+    width: 1200px;
+    font-size: 12px;
+    font-family: "Noto Sans Japanese",sans-serif;
+    letter-spacing: 1.5px;
+    margin: auto;
+    margin-top: 50px;
+}
+.copyright p{
+    color: #865A32;
+    line-height: 25px;
 }

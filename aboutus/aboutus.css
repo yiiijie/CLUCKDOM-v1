@@ -530,9 +530,6 @@ body{
     display: flex;
     margin: 35px 35px 0 0;
 }
-.footer_info .footer_nav .nav_link .nav_items a{
-    color: #865A32;
-}
 .footer_info .link_btn{
     display: flex;
 }
@@ -551,11 +548,15 @@ body{
 .map_link{
     margin: 0 25px;
 }
+.footer_nav .nav_link:hover li{
+    color: #D9042B;
+}
 .footer_nav .nav_link .nav_items{
     font-size: 18px;
     font-weight: 500;
     text-align: center;
     margin: 10px 30px;
+    color: #865A32;
 }
 .footer_inner .fbig{
     display: flex;

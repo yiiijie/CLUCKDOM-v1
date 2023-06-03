@@ -17,6 +17,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Noto+Sans+JP:wght@100;200;300;400&display=swap" rel="stylesheet">
+    <!-- ---RWD viewport設定--- -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ---------------------- -->
     <link rel="stylesheet" href="index.css">
         
 </head>
@@ -327,69 +330,81 @@
     </div>
     
 
-    <div class="footer">
-        <div class="footer_inner">
-            <div class="footer_logo">
-                <a href="#">
-                    <img src="pic/logo_red.svg" alt="logo">
-                </a>              
-            </div>   
-            <div class="footer_info">
-                <ul class="link_btn">
-                    <li class="map_link">
-                        <a href="">
-                           <i class="fa-solid fa-circle-right"></i> 
-                        </a>
-                        <a href="#">320桃園市中壢區復興路46號9樓</a>   
-                    </li>
-                    <li class="contact_link">
-                        <a href="">
-                           <i class="fa-solid fa-circle-right"></i> 
-                        </a> 
-                        <a href="#">聯絡我們</a>   
-                    </li>                              
-                </ul>
-                <nav class="footer_nav">
-                    <ul class="nav_link">
-                        <li class="nav_items"><a href="./aboutus/aboutus.html">關於我們</a></li>
-                        <li class="nav_items_en"><a href="">ABOUT US</a></li>
-                    </ul>
-                    <ul class="nav_link">
-                        <li class="nav_items"><a href="./eggs/eggs.html">精選商品</a></li>
-                        <li class="nav_items_en"><a href="">EGGS</a></li>
-                    </ul>
-                    <ul class="nav_link">
-                        <li class="nav_items"><a href="">檢驗報告</a></li>
-                        <li class="nav_items_en"><a href="">SGS</a></li>
-                    </ul>
-                    <ul class="nav_link">
-                        <li class="nav_items"><a href="">通路門市</a></li>
-                        <li class="nav_items_en"><a href="">STORE</a></li>
-                    </ul>
-                    <ul class="nav_link">
-                        <li class="nav_items"><a href="">最新消息</a></li>
-                        <li class="nav_items_en"><a href="">NEWS</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="fbig">
-                <div class="fb">
-                    <a href="">
-                       <i class="fa-brands fa-facebook-f"></i> 
+    <div class="footer_wrap">
+        <div class="footer">
+            <div class="footer_inner">
+                <div class="footer_logo">
+                    <a href="./index.html">
+                        <img src="pic/logo_red.svg" alt="logo">
                     </a>              
+                </div>   
+                <div class="footer_info">
+                    <ul class="link_btn">
+                        <li class="map_link">
+                            <a href="">
+                            <i class="fa-solid fa-circle-right"></i> 
+                            </a>
+                            <a href="#">320桃園市中壢區復興路46號9樓</a>   
+                        </li>
+                        <li class="contact_link">
+                            <a href="">
+                            <i class="fa-solid fa-circle-right"></i> 
+                            </a> 
+                            <a href="#">聯絡我們</a>   
+                        </li>                              
+                    </ul>
+                    <nav class="footer_nav">
+                        <ul class="nav_link">
+                            <a href="../aboutus/aboutus.html">
+                                <li class="nav_items">關於我們</li>
+                                <li class="nav_items_en">ABOUT US</li> 
+                            </a>                      
+                        </ul>
+                        <ul class="nav_link">
+                            <a href="../eggs/eggs.html">
+                                <li class="nav_items">精選商品</li>
+                                <li class="nav_items_en">EGGS</li>
+                            </a>                      
+                        </ul>
+                        <ul class="nav_link">
+                            <a href="">
+                                <li class="nav_items">檢驗報告</li>
+                                <li class="nav_items_en">SGS</li>
+                            </a>                     
+                        </ul>
+                        <ul class="nav_link">
+                            <a href="">
+                                <li class="nav_items">通路門市</li>
+                                <li class="nav_items_en">STORE</li>
+                            </a>                      
+                        </ul>
+                        <ul class="nav_link">
+                            <a href="../news/news.html">
+                                <li class="nav_items">最新消息</li>
+                                <li class="nav_items_en">NEWS</li>
+                            </a>                     
+                        </ul>
+                    </nav>
                 </div>
-                <div class="ig">
-                    <a href="">
-                       <i class="fa-brands fa-instagram"></i> 
-                    </a>             
-                </div>
-            </dv>
-            
+                <div class="fbig">
+                    <div class="fb">
+                        <a href="">
+                        <i class="fa-brands fa-facebook-f"></i> 
+                        </a>              
+                    </div>
+                    <div class="ig">
+                        <a href="">
+                        <i class="fa-brands fa-instagram"></i> 
+                        </a>             
+                    </div>
+                </dv>          
+            </div>
+        </div>
+        <div class="copyright">
+            <p>本網站為緯育TibaMe前端工程師班CHD102班學員專題作品，本平台僅供學習、展示之用。參考資源: 伊東養鶏場、Tamarando</p>
         </div>
     </div>
-    <div class="copyright">
-        <p>本網站為緯育TibaMe前端工程師班CHD102班學員專題作品，本平台僅供學習、展示之用。參考資源: 伊東養鶏場、Tamarando</p>
-    </div>
+    
 
     <!-- javascript -->
     <script>
@@ -401,38 +416,5 @@
     </script>
     <!-- javascript -->
 
-    <!-- <script>
-        function load() {
-            var pic_carousel = document.querySelector('.pic_carousel');
-            var carousel_wrap = document.querySelector('.carousel_wrap');
-            let left = parseInt(pic_carousel.style.left);
-            let timer;
-    
-            function move() {
-                clearInterval(timer);
-                timer = setInterval(() => {
-                    left = left - 2;
-                    console.log(pic_carousel.clientLeft);
-                    if (left === -(8 * 500 + 2 * 24)) {
-                        left = 0;
-                    }
-                    pic_carousel.style.left = left + 'px';
-                }, 20);
-            }
-    
-            move();
-    
-            carousel_wrap.onmouseover = function () {
-                clearInterval(timer);
-            };
-    
-            carousel_wrap.onmouseleave = function () {
-                move();
-            };
-        }
-    
-        document.addEventListener('DOMContentLoaded', load);
-    </script>
-     -->
 </body>
 </html>

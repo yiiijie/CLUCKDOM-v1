@@ -636,6 +636,7 @@ body{
     padding: 12px 15px;
     background-color:#FFC93D;
     border: 2px solid #FFC93D;
+    transition: .2s;
 }
 .eggs_set_wrap .price_wrap .button:hover{
     background-color:#fff;
@@ -697,11 +698,15 @@ body{
 .map_link{
     margin: 0 25px;
 }
+.footer_nav .nav_link:hover li{
+    color: #D9042B;
+}
 .footer_nav .nav_link .nav_items{
     font-size: 18px;
     font-weight: 500;
     text-align: center;
     margin: 10px 30px;
+    color: #865A32;
 }
 .footer_inner .fbig{
     display: flex;
