@@ -195,7 +195,7 @@ transition: top .5s .5s, rotate .5s;
 .family{
     max-width: 1200px;
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     /* justify-content: flex-end; */
     margin: auto;
 }
