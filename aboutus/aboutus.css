@@ -2,11 +2,15 @@
 *{
     margin: 0;
     padding: 0;
-    /* outline: 1px solid red; */
+   /* outline: 1px solid rgb(248, 180, 180); */
 }
-h1{
+html {
+    font-size: 16px;
+}
+  h1 {
+    color: #3d3d3d;
     font-weight: 500;
-    font-size: 35px;
+    font-size: 1.8rem;
     font-family: "Zen Maru Gothic","Noto Sans Japanese",sans-serif; 
 }
 body{
@@ -15,6 +19,171 @@ body{
 ::selection{
     color:#3d3d3d;
     background:#fff2d4;
+}
+
+.menu_button {
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    cursor: pointer;
+    z-index: 3;
+    background-color: #fff;
+    border-radius: 0 0 0 50px;
+    top: 0;
+    right: 0;
+    box-shadow: 0 0 15px rgb(166, 166, 166, .3);
+    position: fixed;
+}
+.nav_open .nav_link{
+    display: flex;
+}
+.nav_open .nav_link a{
+    padding:  20px;
+    color: #D9042B;
+    width: 100%;
+    border-bottom:1.5px dotted #C2A16C;
+    text-decoration: none;
+}
+.nav_open .nav_link .nav_items{
+    display: inline-block;
+    letter-spacing: 1px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-align: center;
+    color: #3d3d3d;
+    font-family: "Zen Maru Gothic","Noto Sans Japanese",sans-serif; 
+    margin-left: .5rem;
+}
+.nav_open .nav_link .nav_items_en{
+    display: inline-block;
+    color: #C2A16C;
+    font-family: "Hammersmith One","Noto Sans Japanese",sans-serif;
+    font-size: 12px;
+    margin-left: .5rem;
+}
+.nav_inner{
+    position: absolute;
+    right: 0;
+    left: 0;
+    width: 65vw;
+    margin: 30px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding:  40px;
+}
+.nav_open::before{
+    position:absolute;
+    content: '';
+    width: 12rem;
+    height: 12rem;
+    bottom: 0;
+    right: 0;
+    background-image: url('pic/footer_hen.svg');
+    background-size: 100%;
+}
+.nav_open::after{
+    position:absolute;
+    content: '';
+    width: 7.5rem;
+    height: 7.5rem;
+    bottom: 0;
+    right: 170px;
+    background-image: url('pic/yummy.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.menu_button .switch,
+.menu_button .switch::before,
+.menu_button .switch::after{
+    content: '';
+    position: absolute;
+    width: 40%;
+    height: 2px;
+    background-color:#C2A16C;
+    /* left: 50%;
+    transform: translateX(-50%); */
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    transition: background ease .2s, top ease .2s .2s, transform ease .2s;
+}
+.menu_button .switch{
+    top: 27px;
+}
+.menu_button .switch::before{
+    width: 100%;
+    top: -6px;
+}
+.menu_button .switch::after{
+    width: 100%;
+    top: 6px;
+}
+.menu {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "Hammersmith One","Noto Sans Japanese",sans-serif;
+    font-size: 14px;
+    color: #3d3d3d;
+    top: 55%;
+}
+.close {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "Hammersmith One","Noto Sans Japanese",sans-serif;
+    font-size: 14px;
+    color: #3d3d3d;
+    top: 55%;
+}
+
+/* 點選選單變叉叉 */
+#switch:checked + .menu_button .switch {
+    background: transparent;
+}
+
+#switch:checked + .menu_button .switch::before {
+    transform: rotate(45deg);
+}
+
+#switch:checked + .menu_button .switch::after {
+    transform: rotate(-45deg);
+}
+
+#switch:checked + .menu_button .switch::before,
+#switch:checked + .menu_button .switch::after {
+    top: 0;
+    transition: top ease .2s, transform ease .2s .2s;
+}
+#switch:checked +  .menu_button .menu {
+    display: none;
+}
+.close{
+    display: none;
+}
+#switch:checked +  .menu_button .close {
+    display: block;
+}
+
+/* 選單開合 */
+#switch:checked ~ .nav_open {
+    height: 100vh;
+}
+.nav_open {
+    width: 100vw;
+    height: 0;
+    background-color:#D74C38;
+    padding-top: 0;
+    position: fixed;
+    z-index: 2;
+    transition: all .5s;
+    overflow: hidden;
+}
+
+/* 隱藏input */
+input#switch {
+    display: none;
 }
 .search_wrap{
     top: 25px;
@@ -72,13 +241,6 @@ body{
     width: 830px;
     height: 130px;
 } 
-.header {
-    position: relative;
-    background-image: url('pic/header_banner.jpg');
-    background-size: cover;
-    height: 850px;
-    background-position: 0,-30px;
-}
 .nav_link{    
     letter-spacing: 1px;
     font-family: "Zen Maru Gothic","Noto Sans Japanese",sans-serif;
@@ -582,4 +744,73 @@ body{
 .copyright p{
     color: #865A32;
     line-height: 25px;
+}
+
+/* 手機 */
+@media screen and (max-width: 767px){
+.slogan{
+    position: relative;
+    line-height: 50px;
+    top: 35%;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-family: "Zen Maru Gothic","Noto Sans Japanese",sans-serif;         
+    letter-spacing: 5px;
+    text-shadow: 0 0 6px rgb(49, 41, 36, 0.4);
+}
+.gotop_btn img{
+    width: 60px;
+    z-index: 1;
+    cursor: pointer; 
+    bottom: 1rem;
+    right: 1rem;
+    position: fixed;
+}
+.header {
+    position: relative;
+    background-image: url('pic/header_banner.jpg');
+    background-size: cover;
+    background-position:center;
+    height: 70vh;
+}
+.header {
+    position: relative;
+    overflow: hidden;
+}
+.header_nav{
+    display: none;
+}
+.header {
+    position: relative;
+    overflow: hidden;
+}
+.wave{
+    position: absolute;
+    bottom: 0;
+}
+.wave img{
+    transform: scale(2);
+    max-width: 100%;
+}
+.footer::before{
+    display: none;
+}
+.header_logo img{
+    display: none;
+}
+}
+@media screen and (min-width:1200px){
+.header {
+    position: relative;
+    background-image: url('pic/header_banner.jpg');
+    background-size: cover;
+    height: 850px;
+    background-position: 0,-30px;
+}
+.menubox{
+    display: none;
+}
 }

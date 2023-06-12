@@ -24,64 +24,75 @@
 </head>
 <body>
     <div class="gotop_btn" onclick="scrollToTop()">
-        <a href="">
-            <img src="pic/go_top.svg" alt="往上到最頂端">
-        </a>      
+        <img src="pic/go_top.svg" alt="往上到最頂端">
     </div>
 
 
-    <!-- 手機版漢堡 -------------->
-  
-    <div class="mobile_menu">
-        <a href="">
-            <span class="mobile_menu_line"></span>
+    <!-- 手機版漢堡 --------------> 
+    <div class="menubox">
+        <input type="checkbox" id="switch">
+        <label class="menu_button" for="switch">
+            <div class="switch"></div>
             <span class="menu">MENU</span>
-        </a>
-    </div>
-   
-    <!-- 手機版選單 -------------->
+            <span class="close">CLOSE</span>
+        </label>
 
-    <div class="nav_open">
-        <div class="nav_inner">
-            <ul class="nav_link">
-                <a href="./aboutus/aboutus.html">
-                    <i class="fa-solid fa-circle-chevron-right"></i> 
-                    <li class="nav_items">關於我們</li>
-                    <li class="nav_items_en">ABOUT US</li> 
-                </a>    
-            </ul>
-            <ul class="nav_link">
-                <a href="./aboutus/aboutus.html">
-                    <i class="fa-solid fa-circle-chevron-right"></i> 
-                    <li class="nav_items">關於我們</li>
-                    <li class="nav_items_en">ABOUT US</li> 
-                </a>    
-            </ul>
-            <ul class="nav_link">
-                <a href="./aboutus/aboutus.html">
-                    <i class="fa-solid fa-circle-chevron-right"></i> 
-                    <li class="nav_items">關於我們</li>
-                    <li class="nav_items_en">ABOUT US</li> 
-                </a>    
-            </ul>
-            <ul class="nav_link">
-                <a href="./aboutus/aboutus.html">
-                    <i class="fa-solid fa-circle-chevron-right"></i> 
-                    <li class="nav_items">關於我們</li>
-                    <li class="nav_items_en">ABOUT US</li> 
-                </a>    
-            </ul>
-            <ul class="nav_link">
-                <a href="./aboutus/aboutus.html">
-                    <i class="fa-solid fa-circle-chevron-right"></i> 
-                    <li class="nav_items">關於我們</li>
-                    <li class="nav_items_en">ABOUT US</li> 
-                </a>    
-            </ul>
+        <div class="nav_open">
+            <div class="nav_inner">
+                <ul class="nav_link">
+                    <a href="../index.html">
+                        <i class="fa-solid fa-circle-chevron-right"></i> 
+                        <li class="nav_items">首頁</li>
+                        <li class="nav_items_en">HOME</li> 
+                    </a>    
+                </ul>
+                <ul class="nav_link">
+                    <a href="./aboutus/aboutus.html">
+                        <i class="fa-solid fa-circle-chevron-right"></i> 
+                        <li class="nav_items">關於我們</li>
+                        <li class="nav_items_en">ABOUT US</li> 
+                    </a>    
+                </ul>
+                <ul class="nav_link">
+                    <a href="./aboutus/aboutus.html">
+                        <i class="fa-solid fa-circle-chevron-right"></i> 
+                        <li class="nav_items">精選商品</li>
+                        <li class="nav_items_en">EGGS</li> 
+                    </a>    
+                </ul>
+                <ul class="nav_link">
+                    <a href="./aboutus/aboutus.html">
+                        <i class="fa-solid fa-circle-chevron-right"></i> 
+                        <li class="nav_items">檢驗報告</li>
+                        <li class="nav_items_en">SGS</li> 
+                    </a>    
+                </ul>
+                <ul class="nav_link">
+                    <a href="./aboutus/aboutus.html">
+                        <i class="fa-solid fa-circle-chevron-right"></i> 
+                        <li class="nav_items">通路門市</li>
+                        <li class="nav_items_en">STROE</li> 
+                    </a>    
+                </ul>
+                <ul class="nav_link">
+                    <a href="./aboutus/aboutus.html">
+                        <i class="fa-solid fa-circle-chevron-right"></i> 
+                        <li class="nav_items">最新消息</li>
+                        <li class="nav_items_en">NEWS</li> 
+                    </a>    
+                </ul>
+                <ul class="nav_link">
+                    <a href="./aboutus/aboutus.html">
+                        <i class="fa-solid fa-circle-chevron-right"></i> 
+                        <li class="nav_items">聯絡我們</li>
+                        <li class="nav_items_en">CONTACT US</li> 
+                    </a>    
+                </ul>
+            </div>
         </div>
+
     </div>
 
-    <!------------------------------>
   
 
     <div class="header">
@@ -171,6 +182,13 @@
     </div>
 
     <div class="eggshape">
+        
+        <!-- 手機版logo -------------->
+        <div class="logo_red_mobile">
+            <a href="#">
+                <img src="pic/logo_red_mobile.svg" alt="logo_red">
+            </a>
+        </div>
         <div class="pic">
             <img class="chick" src="pic/chick.svg" alt="">
             <img src="pic/eggshape.png" alt="eggshape"> 
@@ -182,27 +200,58 @@
         </div>  
     </div>
 
+
     <div class="family">
+        <div class="family_bgc"></div>
         <div class="txt">
-            <h1>追尋純淨：放牧鷄蛋的<span class="nature">天然</span>旅程</h1>
-            <p>我們相信真正的美味來自於自然的滋味。因此，我們成立了一個團隊，致力於放牧雞蛋的生產，希望為您呈現最純粹的味道。讓我們一同享受這份來自大自然的禮物，並將它們化作您美食的一部分。每一口都是一次對大自然的敬意，也是對生命的珍愛。我們相信當您品味到放牧雞蛋的美味時，您也會感受到這份獨特的味道所蘊含的溫暖與喜悅。</p>
+            <div class="title">
+                <h1>追尋純淨：</h1>
+                <h1>放牧鷄蛋的<span class="nature">天然</span>旅程</h1>
+            </div>
+            <p>我們相信真正的美味來自於自然的滋味。因此，我們成立了一個團隊，致力於放牧雞蛋的生產，希望為您呈現最純粹的味道，讓我們一同享受這份來自大自然的禮物，並將它們化作您美食的一部分。</p>
+            <p>每一口都是對大自然的敬意，也是對生命的珍愛。我們相信當您品味到放牧雞蛋的美味時，您也會感受到這份獨特的味道所蘊含的溫暖與喜悅。放牧雞蛋的美味時，您也會感受到這份獨特的味道所蘊含的溫暖與喜悅。</p>
         </div>
         <div class="pic">
             <img src="pic/family.svg" alt="family">
         </div>
     </div>
 
+<!---------- 黃色背景 手機版 ----------->
+    <div class="free_range_eggs_mobile">
+        <div class="pic_mobile">
+            <img class="hen" src="pic/hen_on_lawn.png" alt="picture">
+        </div>
+        <div class="title_mobile">
+            <h1 class="eggs">放牧鷄蛋</h1>
+            <h1>真正看得到、吃得到</h1>
+            <p class="mobile">在雞蛋王國，我們有著一個獨特的願景，希望改變台灣雞隻飼養方式，我們決心用放牧飼養來取代傳統的格子籠和平面飼養，讓每一位母雞都能發聲。</p>          
+        </div>
+    </div>
+    <div class="wave_yellow_mobile">
+        <div class="pic_mobile">
+            <img class="chick" src="pic/chick.png" alt="picture">  
+            <img class="dialog" src="pic/dialog.svg" alt="picture">
+            <div class="paragraph">
+                <p>我們與創辦人以及眾多企業家攜手合作，堅持不使用針劑、藥物或強迫的飼養過程，創造出一個能讓每位顧客以實惠的價格品嚐到放牧飼養雞蛋的方式。我們的目標是建立一個人與動物健康快樂的經濟循環，並以獨立企業的形式推動放牧飼養，結合群眾養雞的力量，共同創造永續經營的未來。</p>
+                <p>在雞蛋王國，我們以創新和熱情，開創出一個全新的雞蛋時代，一個注重品質和永續的未來。</p>
+            </div>
+        </div>
+    </div>
+    <div class="yellow_bgc"></div> 
+
+
+<!---------- 黃色背景 桌機版 ----------->
     <div class="wave_yellow">
         <div class="free_range_eggs">
             <div class="pic">
-                <img class="hen" src="pic/hen_on_lawn.png" alt="picture">
+                <img class="hen" src="pic/hen_on_lawn.png" alt="picture"> 
                 <img class="chick" src="pic/chick.png" alt="picture"> 
                 <img class="eggs" src="pic/eggs.png" alt="picture">
             </div>
             <div class="title">
                 <h1 class="eggs">放牧鷄蛋</h1>
-                <h1>真正看得到、吃得到的</h1>         
-            </div>            
+                <h1>真正看得到、吃得到</h1>       
+            </div>      
         </div>
         <div class="paragraph">
             <div class="txt">
@@ -215,6 +264,8 @@
             <img class="dialog" src="pic/dialog.svg" alt="picture">
         </div>
     </div>
+
+
 
     <div class="eggseries_carousel">
         <div class="title">
@@ -393,18 +444,18 @@
                 </div>   
                 <div class="footer_info">
                     <ul class="link_btn">
-                        <li class="map_link">
-                            <a href="">
-                            <i class="fa-solid fa-circle-right"></i> 
-                            </a>
-                            <a href="#">320桃園市中壢區復興路46號9樓</a>   
-                        </li>
                         <li class="contact_link">
                             <a href="">
-                            <i class="fa-solid fa-circle-right"></i> 
+                                <i class="fa-solid fa-circle-right"></i> 
                             </a> 
                             <a href="#">聯絡我們</a>   
                         </li>                              
+                        <li class="map_link">
+                            <a href="">
+                                <i class="fa-solid fa-circle-right"></i> 
+                            </a>
+                            <a href="#">320桃園市中壢區復興路46號9樓</a>   
+                        </li>
                     </ul>
                     <nav class="footer_nav">
                         <ul class="nav_link">
@@ -456,6 +507,7 @@
         <div class="copyright">
             <p>本網站為緯育TibaMe前端工程師班CHD102班學員專題作品，本平台僅供學習、展示之用。參考資源: 伊東養鶏場、Tamarando</p>
         </div>
+        <div class="footer_bgc"></div>
     </div>
     
 

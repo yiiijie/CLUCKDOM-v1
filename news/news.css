@@ -273,7 +273,7 @@ body{
     width:1800px;
     display: flex;
     margin-top: 40px;
-    margin-left: 650px;
+    margin-left: 600px;
 }
 .carousel_cards .card,
 .cluckdom_carousel_cards .card{
@@ -303,8 +303,8 @@ body{
     text-align: justify;
 }
 .carousel_cards .card .txt {
-    color:#3d3d3d;
-    font-weight: 300;
+    color:#686868;
+    font-weight: 400;
     font-size: 14px;
     letter-spacing: 2px;
     line-height: 20px;
@@ -375,7 +375,7 @@ body{
     width:1800px;
     display: flex;
     margin-top: 190px;
-    margin-left: -560px;
+    margin-left: -680px;
 }
 .cluckdom_news .title .en {
     writing-mode: vertical-lr;

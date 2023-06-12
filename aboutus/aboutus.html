@@ -17,6 +17,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Noto+Sans+JP:wght@100;200;300;400&display=swap" rel="stylesheet">
+     <!-- ---RWD viewport設定--- -->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- ---------------------- -->
     <link rel="stylesheet" href="aboutus.css">
 </head>
 <body>
@@ -25,7 +28,72 @@
             <img src="pic/go_top.svg" alt="往上到最頂端">
         </a>      
     </div>
-  
+
+ <!-- 手機版漢堡 --------------> 
+ <div class="menubox">
+    <input type="checkbox" id="switch">
+    <label class="menu_button" for="switch">
+        <div class="switch"></div>
+        <span class="menu">MENU</span>
+        <span class="close">CLOSE</span>
+    </label>
+
+    <div class="nav_open">
+        <div class="nav_inner">
+            <ul class="nav_link">
+                <a href="../index.html">
+                    <i class="fa-solid fa-circle-chevron-right"></i> 
+                    <li class="nav_items">首頁</li>
+                    <li class="nav_items_en">HOME</li> 
+                </a>    
+            </ul>
+            <ul class="nav_link">
+                <a href="./aboutus/aboutus.html">
+                    <i class="fa-solid fa-circle-chevron-right"></i> 
+                    <li class="nav_items">關於我們</li>
+                    <li class="nav_items_en">ABOUT US</li> 
+                </a>    
+            </ul>
+            <ul class="nav_link">
+                <a href="./aboutus/aboutus.html">
+                    <i class="fa-solid fa-circle-chevron-right"></i> 
+                    <li class="nav_items">精選商品</li>
+                    <li class="nav_items_en">EGGS</li> 
+                </a>    
+            </ul>
+            <ul class="nav_link">
+                <a href="./aboutus/aboutus.html">
+                    <i class="fa-solid fa-circle-chevron-right"></i> 
+                    <li class="nav_items">檢驗報告</li>
+                    <li class="nav_items_en">SGS</li> 
+                </a>    
+            </ul>
+            <ul class="nav_link">
+                <a href="./aboutus/aboutus.html">
+                    <i class="fa-solid fa-circle-chevron-right"></i> 
+                    <li class="nav_items">通路門市</li>
+                    <li class="nav_items_en">STROE</li> 
+                </a>    
+            </ul>
+            <ul class="nav_link">
+                <a href="./aboutus/aboutus.html">
+                    <i class="fa-solid fa-circle-chevron-right"></i> 
+                    <li class="nav_items">最新消息</li>
+                    <li class="nav_items_en">NEWS</li> 
+                </a>    
+            </ul>
+            <ul class="nav_link">
+                <a href="./aboutus/aboutus.html">
+                    <i class="fa-solid fa-circle-chevron-right"></i> 
+                    <li class="nav_items">聯絡我們</li>
+                    <li class="nav_items_en">CONTACT US</li> 
+                </a>    
+            </ul>
+        </div>
+    </div>
+</div>
+
+
     <div class="header">
         <div class="search_wrap">
             <div class="search_inner">
@@ -337,6 +405,7 @@
         <div class="copyright">
             <p>本網站為緯育TibaMe前端工程師班CHD102班學員專題作品，本平台僅供學習、展示之用。參考資源: 伊東養鶏場、Tamarando</p>
         </div>
+        <div class="footer_bgc"></div>
     </div>
     
 

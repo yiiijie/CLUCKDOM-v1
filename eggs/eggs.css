@@ -16,6 +16,12 @@ body{
     color:#3d3d3d;
     background:#fff2d4;
 }
+
+.wave img{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
 .search_wrap{
     top: 25px;
     width: 1200px;
@@ -73,9 +79,9 @@ body{
     width: 830px;
     height: 130px;
 }
-.header{
+/* .header{
     position: relative;
-}
+} */
 .header_banner img{
     position: absolute;
     width: 100%;
@@ -216,18 +222,18 @@ body{
 .falling_eggs{
     width: 100%;
 }
-.falling_eggs img{
+.header {
     position: relative;
-    width: 100%;
-    /* height: 1000px; */
-    top: -260px;
-    z-index: -2;
+    background-image: url('pic/header_banner.jpg');
+    background-size: cover;
+    background-position:center;
+    height: 80vh;
 }
 .falling_eggs .paragraph{
     position: relative;
     width: 1200px;
     text-align: center;
-    top: 430px;
+    top: 150px;
     margin: auto;
 }
 .falling_eggs .paragraph h1{
@@ -245,6 +251,13 @@ body{
 }
 .falling_eggs .paragraph .nature{
     color:#C2A16C;
+}
+.falling_eggs img{
+    width: 100%;
+    position: relative;
+    z-index: -2;
+    top: -500px;
+    /* padding: -100px 0 100px 0; */
 }
 .line_icon{
     position: relative;
