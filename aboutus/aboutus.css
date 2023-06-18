@@ -20,7 +20,6 @@ body{
     color:#3d3d3d;
     background:#fff2d4;
 }
-
 .menu_button {
     position: absolute;
     width: 85px;
@@ -107,6 +106,7 @@ body{
     margin-left: auto;
     margin-right: auto;
     transition: background ease .2s, top ease .2s .2s, transform ease .2s;
+    
 }
 .menu_button .switch{
     top: 27px;
@@ -185,6 +185,7 @@ body{
 input#switch {
     display: none;
 }
+
 .search_wrap{
     top: 25px;
     width: 1200px;
