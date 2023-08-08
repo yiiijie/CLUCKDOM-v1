@@ -2,7 +2,7 @@
 *{
     margin: 0;
     padding: 0;
-    outline: 1px solid rgb(248, 180, 180);
+    /* outline: 1px solid rgb(248, 180, 180); */
 }
 html {
     font-size: 16px;
@@ -707,12 +707,17 @@ input#switch {
 /* 平板 */
 @media screen and (768px <= width <= 1023px){
 .gotop_btn img{
-    width: 10%;
+    width: 60px;
     position: fixed;
-    bottom: 1rem;
-    right: 1rem;
+    bottom: 20px;
+    right: 20px;
     z-index: 100;    
-}    
+}  
+.wave img{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
 .logo_red_mobile{
     position: absolute;
     width: 7.5rem;
@@ -799,14 +804,6 @@ input#switch {
 }
 .family{
     display: none;
-}
-.gotop_btn img{
-    width: 55px;
-    z-index: 1;
-    cursor: pointer; 
-    bottom: 20px;
-    right: 1rem;
-    position: fixed;
 }
 .logo_red_mobile{
     position: absolute;
@@ -1058,14 +1055,14 @@ input#switch {
     position: relative;
     overflow: hidden;
 }
-.wave{
+/* .wave{
     position: absolute;
     bottom: 0;
 }
 .wave img{
     transform: scale(2);
     max-width: 100%;
-}
+} */
 .footer{
     background-image: url('pic/footer_bg.png');
     background-size: 200%;
@@ -1214,11 +1211,6 @@ input#switch {
     height: 180px;
     top: 230px;
     left: -50px;
-}
-.gotop_btn img{
-    max-width: 80px;
-    bottom: 1.5rem;
-    right: 1.5rem;
 }
 .header {
     position: relative;
@@ -1493,9 +1485,6 @@ h1{
         transform: rotate(360deg);
         }
     }
-.wave img{
-    width: 100%;
-}
 .eggshape{
     max-width: 1200px;
     display: flex;
@@ -1726,7 +1715,7 @@ h1{
     font-family: "Zen Maru Gothic","Noto Sans Japanese",sans-serif;   
     letter-spacing: 2px;
 }
-.button .click_more i{
+.click_more i{
     font-size: 30px;
     color: #D74C38;
 }
@@ -1837,8 +1826,18 @@ h1{
 
 }
 
-
-
 /* 桌機 */
 @media screen and (min-width: 1200px){
+.gotop_btn img{
+    width: 100px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;    
+}  
+.wave img{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
 }
